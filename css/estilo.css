@@ -25,7 +25,7 @@ body{
 #logo-produto{
  display: flex;
     align-items: center;
-    gap: 4px;   /* distância entre as duas logos */
+    gap: 4px; 
     margin-left: 20px;
 
 }
@@ -49,7 +49,7 @@ body{
 
 
 main {
-    flex: 10px;
+    flex: 1;
 }
 
 .pesquisa {
@@ -60,6 +60,11 @@ main {
     border-radius: 5px;
     font-size: 12px;
 
+}
+
+.principal{
+
+    margin: 10px;
 }
 
 .lista-anuncios {
@@ -76,21 +81,43 @@ main {
 .anuncio {
     width: 250px;
     height: 350px;
-
-    padding: 15px;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
     background: white;
     border: 1px solid #ddd;
     border-radius: 10px;
-
     box-shadow: 0 2px 10px rgba(0,0,0,.1);
+}
+.anuncio p {
+    font-size: 12px;
+    padding: none;
+}
+
+.anuncio img {
+    width: 150px;
+
+}
+.anuncio button{
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    background: #198754;
+    color: white;
+    cursor: pointer;
+}
+
+.anuncio button:hover{
+    background: #157347;
 }
 
 footer {
-    background-color: dimgrey;
+    background-color: rgb(3, 3, 3);
     color: white;
     text-align: center;
     font-weight: bold;
-    font-size: 20px;
-    padding: 5px;
+    font-size: 15px;
+           
 }

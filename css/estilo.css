@@ -97,6 +97,7 @@ main {
 
 .anuncio img {
     width: 150px;
+    padding: none;
 
 }
 .anuncio button{
@@ -107,6 +108,10 @@ main {
     background: #198754;
     color: white;
     cursor: pointer;
+}
+
+.anuncio span{
+    margin-bottom: 10px;
 }
 
 .anuncio button:hover{

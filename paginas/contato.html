@@ -1,55 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
     <link rel="stylesheet" href="../css/estilo.css">
     <style>
-         .form{
+        .form {
             text-align: center;
         }
-        label{
+
+        label {
             font-weight: bold;
         }
     </style>
 </head>
+
 <body>
     <header class="cabecalho">
-        
-    <div id="logo-produto">
 
-    <a href="../index.html">
-        <img src="../imagens/SHOP-TADS.png"
-             alt="Logo Shop TADS" width="50" height="45">
-    </a>
+        <div id="logo-produto">
 
-    </div>
-       
+            <a href="../index.html">
+                <img src="../imagens/SHOP-TADS.png" alt="Logo Shop TADS" width="50" height="45">
+            </a>
+
+        </div>
+
     </header>
     <form class="form" method="get" action="contato-sucesso.html">
         <br><br>
         <label>Nome:</label>
         <input type="text" name="nome" required autofocus placeholder="Digite um nome" />
         <br><br>
-    
+
         <label>E-mail:</label>
         <input type="email" name="email" required placeholder="Digite um e-mail"><br><br>
 
         <label>Telefone:</label>
-        <input type="tel" name="Telefone" pattern="[0-9]{10,11}" placeholder="Digite um numero de telefone"/><br><br>
-        
+        <input type="tel" name="Telefone" pattern="[0-9]{10,11}" placeholder="Digite um numero de telefone" /><br><br>
+
         <label>Assunto:</label>
-        <select name="assunto" >
+        <select name="assunto">
             <option value="none" disabled selected>selecione um assunto</option>
             <option value="envio">Envio</option>
             <option value="pagamento">Pagamento</option>
             <option value="Reclamação">Reclamação</option>
         </select><br><br>
-        <textarea name="mensagem" rows="8" cols="40" placeholder="Digite o texto aqui." ></textarea><br/><br/>
-        <input type="submit" value="Enviar"/>
-        <input type="reset" name="reset"/>
-   </form>
+        <textarea name="mensagem" rows="8" cols="40" placeholder="Digite o texto aqui."></textarea><br /><br />
+        <input type="submit" value="Enviar" />
+        <input type="reset" name="reset" />
+    </form>
 
 </body>
+
 </html>

@@ -30,6 +30,11 @@ body{
 
 }
 
+.dados-usuario{
+    font-size: 14px;
+    margin-left: 10px;;
+}
+
 
 .nav{
     display: flex;

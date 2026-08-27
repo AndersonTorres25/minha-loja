@@ -9,12 +9,8 @@
     <link rel="icon" href="../imagens/index/favicon.ico" >
 
     <style>
-        .nome-usuario{
-            font-size: 14px;
-        }
         #usuario{
-            font-size: 14px;
-
+            margin-top: -12px;
         }
     </style>
 
@@ -22,19 +18,24 @@
 <body>
     <header class="cabecalho">
         
-    <div id="logo-produto" >
-       
-        <a href="../index.html">
-            <img src="../imagens/SHOP-TADS.png"
-                 alt="Logo Shop TADS" width="50" height="45"/>
-        </a>
-        <p class="nome-usuario"><i>Olá, Mr.</i></p><br>
-        <a id="usuario" href="">
-            Minha conta >
-        </a>
-        <a id="sair" href="">
-            Sair
-        </a>
+    <div id="logo-produto">
+
+    <a href="../index.html">
+        <img src="../imagens/SHOP-TADS.png"
+             alt="Logo Shop TADS" width="50" height="45">
+    </a>
+
+        <div class="dados-usuario">
+            <p ><i>Olá, Mr.</i>
+            </p>
+
+            <div id="usuario">
+                <a  href="">Minha conta ></a>
+            </div>
+            <div>
+                <a href="">Sair</a></div>
+         </div>
+
     </div>
 
         <input class="pesquisa" type="search" placeholder="Buscar produto" />

@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop TADS | Início</title>
+  <style>
+    :root {
+      --navy: #101a43;
+      --blue: #3155f5;
+      --blue-light: #637cff;
+      --lime: #c8f15a;
+      --text: #172033;
+      --muted: #737d91;
+      --line: #e8ebf2;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--text);
+      background: #ffffff;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    .pagina { min-height: 100vh; display: flex; flex-direction: column; }
+
+    .barra-topo {
+      height: 34px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      color: #dfe5ff;
+      background: var(--navy);
+      font-size: 11px;
+      letter-spacing: .03em;
+    }
+    .barra-topo strong { color: var(--lime); }
+
+    .cabecalho {
+      width: min(1180px, calc(100% - 48px));
+      height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      margin: 0 auto;
+      background: #fff;
+    }
+
+    .marca { display: flex; align-items: center; gap: 12px; }
+    .marca-ifg {
+      width: 36px;
+      height: 36px;
+      display: grid;
+      grid-template-columns: repeat(3, 8px);
+      grid-template-rows: repeat(4, 8px);
+      gap: 2px;
+      padding: 3px;
+      border-radius: 7px;
+      background: #f0f7ea;
+    }
+    .marca-ifg i { display: block; border-radius: 2px; background: #78bd36; }
+    .marca-ifg i:nth-child(1), .marca-ifg i:nth-child(5) { background: #d52b46; }
+    .marca-nome {
+      display: block;
+      color: var(--text);
+      font-size: 17px;
+      font-weight: 800;
+      letter-spacing: -.06em;
+    }
+    .marca-nome b { color: var(--blue); }
+    .marca-campus {
+      display: block;
+      margin-top: 3px;
+      color: #8992a5;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: .12em;
+    }
+
+    .navegacao { display: flex; align-items: center; gap: 28px; font-size: 13px; font-weight: 700; }
+    .navegacao a { color: #677187; transition: color .2s ease; }
+    .navegacao a:hover, .navegacao .selecionado { color: var(--blue); }
+    .carrinho {
+      width: 40px;
+      height: 40px;
+      display: grid;
+      place-items: center;
+      border-radius: 11px;
+      color: var(--blue) !important;
+      background: #eef1ff;
+    }
+    .carrinho svg { width: 20px; }
+
+    main { flex: 1; }
+    .conteudo { width: min(1180px, calc(100% - 48px)); margin: 0 auto; }
+
+    .banner {
+      position: relative;
+      min-height: 430px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      isolation: isolate;
+      border-radius: 24px;
+      padding: 58px 64px;
+      color: #fff;
+      background: linear-gradient(118deg, #101a43 0%, #273a9d 56%, #5068ed 100%);
+      box-shadow: 0 24px 55px rgba(30, 55, 166, .2);
+    }
+    .banner::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: -185px;
+      right: 125px;
+      width: 530px;
+      height: 530px;
+      border: 1px solid rgba(255,255,255,.16);
+      border-radius: 50%;
+      box-shadow: 0 0 0 70px rgba(255,255,255,.025), 0 0 0 140px rgba(255,255,255,.025);
+    }
+    .banner::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      right: -105px;
+      bottom: -175px;
+      width: 380px;
+      height: 380px;
+      border-radius: 50%;
+      background: rgba(200, 241, 90, .15);
+    }
+
+    .banner-texto { position: relative; z-index: 2; max-width: 555px; }
+    .etiqueta {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      color: #dce4ff;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+    .etiqueta::before { content: ""; width: 26px; height: 2px; border-radius: 2px; background: var(--lime); }
+    h1 {
+      max-width: 550px;
+      margin: 17px 0 16px;
+      font-size: clamp(38px, 5vw, 62px);
+      line-height: .98;
+      letter-spacing: -.065em;
+    }
+    h1 span { color: var(--lime); }
+    .descricao {
+      max-width: 430px;
+      margin: 0 0 28px;
+      color: #dce3ff;
+      font-size: 15px;
+      line-height: 1.65;
+    }
+    .acoes { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+    .botao-principal, .botao-secundario {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 18px;
+      border-radius: 10px;
+      font-size: 12px;
+      font-weight: 800;
+      transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+    }
+    .botao-principal { gap: 9px; color: #18220d; background: var(--lime); }
+    .botao-principal:hover { transform: translateY(-2px); box-shadow: 0 9px 20px rgba(200,241,90,.25); }
+    .botao-secundario { color: #fff; border: 1px solid rgba(255,255,255,.3); }
+    .botao-secundario:hover { background: rgba(255,255,255,.1); }
+
+    .arte-banner { position: absolute; right: 42px; bottom: 12px; width: 380px; height: 340px; }
+    .circulo-arte {
+      position: absolute;
+      top: 4px;
+      right: 12px;
+      width: 285px;
+      height: 285px;
+      border-radius: 50%;
+      background: linear-gradient(145deg, #9dadff, #586bd5 70%);
+      box-shadow: inset 25px 18px 52px rgba(255,255,255,.22);
+    }
+    .laptop { position: absolute; right: 18px; bottom: 34px; width: 270px; transform: rotate(-5deg); filter: drop-shadow(0 22px 16px rgba(8,16,63,.38)); }
+    .tela { height: 164px; padding: 12px; border: 7px solid #d8def8; border-bottom-width: 11px; border-radius: 12px 12px 5px 5px; background: #171f4a; }
+    .tela-logo { color: var(--lime); font-size: 11px; font-weight: 800; }
+    .tela-titulo { margin-top: 28px; color: #fff; font-size: 22px; font-weight: 800; line-height: 1.05; letter-spacing: -.06em; }
+    .tela-linha { width: 78px; height: 4px; margin-top: 13px; border-radius: 4px; background: var(--lime); }
+    .base-laptop { height: 14px; background: linear-gradient(#c4cdef, #8995c5); border-radius: 0 0 10px 10px; transform: perspective(90px) rotateX(12deg); }
+    .selo { position: absolute; left: 0; bottom: 45px; display: flex; align-items: center; gap: 9px; padding: 11px 14px; border-radius: 11px; color: #192970; background: #fff; box-shadow: 0 13px 26px rgba(12,24,88,.23); font-size: 10px; font-weight: 800; }
+    .selo i { width: 10px; height: 10px; border-radius: 50%; background: var(--lime); }
+
+    .apoio { display: flex; align-items: center; justify-content: center; gap: 48px; padding: 26px 15px 30px; color: #768197; font-size: 11px; }
+    .apoio-item { display: flex; align-items: center; gap: 9px; }
+    .apoio-item strong { display: block; color: var(--text); font-size: 12px; margin-bottom: 3px; }
+    .apoio-icone { width: 29px; height: 29px; display: grid; place-items: center; border-radius: 9px; color: var(--blue); background: #eef1ff; }
+    .apoio-icone svg { width: 16px; }
+
+    footer { padding: 17px 24px; color: #8992a5; border-top: 1px solid var(--line); text-align: center; font-size: 11px; }
+
+    @media (max-width: 850px) {
+      .cabecalho { height: auto; padding: 18px 0; }
+      .banner { min-height: 610px; padding: 42px 34px; align-items: flex-start; }
+      .arte-banner { right: 50%; bottom: -16px; transform: translateX(50%) scale(.85); transform-origin: bottom center; }
+      .apoio { gap: 20px; flex-wrap: wrap; }
+    }
+    @media (max-width: 560px) {
+      .barra-topo { padding: 0 12px; font-size: 9px; text-align: center; }
+      .cabecalho, .conteudo { width: calc(100% - 28px); }
+      .navegacao { gap: 12px; }
+      .navegacao a:not(.carrinho) { display: none; }
+      .banner { min-height: 620px; padding: 30px 22px; border-radius: 18px; }
+      h1 { font-size: 41px; }
+      .descricao { font-size: 13px; }
+      .arte-banner { right: 44%; transform: translateX(50%) scale(.72); }
+      .apoio { display: grid; grid-template-columns: 1fr; justify-content: start; width: fit-content; margin: auto; }
+    }
+  </style>
+</head>
+<body>
+  <div class="pagina">
+    <div class="barra-topo"><strong>SHOP TADS</strong><span>tecnologia para estudar, criar e evoluir</span></div>
+
+    <header class="cabecalho">
+      <a class="marca" href="index.html" aria-label="Shop TADS - início">
+        <span class="marca-ifg" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+        <span><span class="marca-nome"><b>SHOP</b> TADS</span><span class="marca-campus">IFG • CAMPUS FORMOSA</span></span>
+      </a>
+      <nav class="navegacao" aria-label="Navegação principal">
+        <a class="selecionado" href="index.html">Início</a>
+        <a href="paginas/produtos.html">Produtos</a>
+        <a href="paginas/contato.html">Contato</a>
+        <a class="carrinho" href="paginas/carrinho.html" aria-label="Carrinho de compras">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 4h2l2.2 11.1a2 2 0 0 0 2 1.6h7.9a2 2 0 0 0 1.9-1.5L21 8H6"/><circle cx="10" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg>
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="conteudo">
+        <section class="banner" aria-labelledby="titulo-banner">
+          <div class="banner-texto">
+            <div class="etiqueta">Tecnologia que acompanha você</div>
+            <h1>Sua próxima compra começa <span>aqui.</span></h1>
+            <p class="descricao">Encontre equipamentos e acessórios para transformar suas ideias em realidade com praticidade e qualidade aqui no Shop TADS.</p>
+            <!--<div class="acoes">
+              <a class="botao-principal" href="paginas/produtos.html">Ver produtos <span>→</span></a>
+              <a class="botao-secundario" href="paginas/contato.html">Fale conosco</a>
+            </div> -->
+          </div>
+          <div class="arte-banner" aria-hidden="true">
+            <div class="circulo-arte"></div>
+            <div class="laptop"><div class="tela"><div class="tela-logo">SHOP TADS</div><div class="tela-titulo">VENDAS<br>Compre em qualquer lugar.</div><div class="tela-linha"></div></div><div class="base-laptop"></div></div>
+            
+          </div>
+        </section>
+
+        <section class="apoio" aria-label="Vantagens">
+          <div class="apoio-item"><span class="apoio-icone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h11v11H3zM14 10h4l3 3v4h-7z"/><circle cx="7" cy="19" r="2"/><circle cx="18" cy="19" r="2"/></svg></span><span><strong>Entrega rápida</strong>Para você não parar</span></div>
+          <div class="apoio-item"><span class="apoio-icone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3 5 6v5c0 4.5 3 8.3 7 10 4-1.7 7-5.5 7-10V6l-7-3Z"/><path d="m9 12 2 2 4-4"/></svg></span><span><strong>Compra segura</strong>Seus dados protegidos</span></div>
+          <div class="apoio-item"><span class="apoio-icone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 11a8 8 0 1 1-2.3-5.7"/><path d="M20 4v6h-6"/></svg></span><span><strong>Suporte de verdade</strong>Conte com a nossa equipe</span></div>
+        </section>
+      </div>
+    </main>
+
+    <footer>© 2026 Shop TADS · Projeto acadêmico IFG</footer>
+  </div>
+</body>
+</html>

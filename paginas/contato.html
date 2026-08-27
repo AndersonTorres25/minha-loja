@@ -27,7 +27,7 @@
     </div>
        
     </header>
-    <form class="form" method="post" action="contato-sucesso.html">
+    <form class="form" method="get" action="contato-sucesso.html">
         <br><br>
         <label>Nome:</label>
         <input type="text" name="nome" required autofocus placeholder="Digite um nome" />
@@ -37,16 +37,16 @@
         <input type="email" name="email" required placeholder="Digite um e-mail"><br><br>
 
         <label>Telefone:</label>
-        <input type="tel" name="Telefone" placeholder="Digite um numero de telefone"/><br><br>
+        <input type="tel" name="Telefone" pattern="[0-9]{10,11}" placeholder="Digite um numero de telefone"/><br><br>
         
         <label>Assunto:</label>
-        <select name="cor" required>
+        <select name="assunto" required>
             <option value="" disabled selected>selecione um assunto</option>
-            <option value="azul">Envio</option>
+            <option value="envio">Envio</option>
             <option value="pagamento">Pagamento</option>
-            <option value="verde">Reclamação</option>
+            <option value="Reclamação">Reclamação</option>
         </select><br><br>
-        <textarea name="mensagem" rows="8" cols="40" > </textarea><br/><br/>
+        <textarea name="mensagem" rows="8" cols="40" placeholder="Digite o texto aqui." ></textarea><br/><br/>
         <input type="submit" value="Enviar"/>
         <input type="reset" name="reset"/>
    </form>

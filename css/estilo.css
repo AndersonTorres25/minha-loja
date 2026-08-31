@@ -4,9 +4,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     padding: 15px 30px 15px 0px;
     background: white;
     box-shadow: 0 2px 20px rgba(1, 41, 112, .1);
+    box-sizing: border-box;
 }
 
 .logos {
@@ -56,10 +58,12 @@ main {
 .pesquisa {
     display: flex;
     gap: 5px;
+    flex: 1;
+    max-width: 400px;
 }
 
 .pesquisa input{
-   width: 250px;
+   width: 100px;
     height: 35px;
     box-sizing: border-box;
     padding: 10px;
@@ -103,11 +107,6 @@ body {
     margin: 0;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
-
-.lista-anuncios li {
-    flex-shrink: 0;
-}
-
 
 
 .anuncio {
@@ -173,8 +172,11 @@ footer{
     background-color: #000000;
     position: relative;
     display: flex; 
+    justify-content: center;
     align-items: center;  
-    min-height: 50px;  
+    min-height: 60px;  
+    padding: 10px 20px;
+    box-sizing: border-box;
 }
  
 footer p {
@@ -182,13 +184,13 @@ footer p {
     font-size: 15px;
     font-weight: bold;
     color: white;
-    position: absolute;
     left: 50%;
-    transform: translateX(-50%);
 }
 
 .redes-sociais{
+     position: absolute;
     display: flex;
+    left: 20px;
     align-items: center;
     gap: 10px;
     margin-left: 10px;
@@ -275,3 +277,31 @@ input.botao-enviar:hover {
 
 
 
+/*tela Mobile*/
+@media (max-width: 600px) {
+
+    .cabecalho {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    #logo-produto {
+        margin-left: 0;
+    }
+
+    .dados-usuario {
+        margin-left: 5px;
+    }
+
+    .pesquisa {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .nav {
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+    }
+}

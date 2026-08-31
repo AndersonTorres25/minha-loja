@@ -63,8 +63,9 @@ main {
 }
 
 .pesquisa input{
-   width: 100px;
+    width: 100px;
     height: 35px;
+    width: 250px;
     box-sizing: border-box;
     padding: 10px;
     border: 1px solid #ccc;

@@ -7,7 +7,7 @@
     <title>Formulário</title>
     <link rel="stylesheet" href="../css/estilo.css">
     <style>
-        .form {
+        .formulario {
             text-align: center;
         }
 
@@ -29,51 +29,57 @@
         </div>
 
     </header>
-    <form class="form" method="get" action="contato-sucesso.html">
-        <br><br>
-        <label>Nome:</label>
-        <input type="text" name="nome" required autofocus placeholder="Digite um nome" />
-        <br><br>
 
-        <label>E-mail:</label>
-        <input type="email" name="email" required placeholder="Digite um e-mail"><br><br>
+    <main class="contato">
+        <form class="formulario" method="get" action="contato-sucesso.html">
+            <h1>Entre em contato</h1>
 
-        <label>Telefone:</label>
-        <input type="tel" name="Telefone" pattern="[0-9]{10,11}" placeholder="Digite um numero de telefone" /><br><br>
+            <label>Nome *</label>
+            <input type="text" name="nome" required autofocus placeholder="Digite um nome" />
 
-        <label>Assunto:</label>
-        <select name="assunto">
-            <option value="none" disabled selected>selecione um assunto</option>
-            <option value="envio">Envio</option>
-            <option value="pagamento">Pagamento</option>
-            <option value="Reclamação">Reclamação</option>
-        </select><br><br>
-        <textarea name="mensagem" rows="8" cols="40" placeholder="Digite o texto aqui."></textarea><br /><br />
-        <input type="submit" value="Enviar" />
-        <input type="reset" name="reset" />
-    </form>
+            <label>E-mail *</label>
+            <input type="email" name="email" required placeholder="Digite um e-mail">
 
-        <footer>
+            <label>Telefone</label>
+            <input type="tel" name="Telefone" pattern="[0-9]{10,11}" placeholder="Digite um numero de telefone" />
 
-    <div class="redes-sociais">
+            <label for="assunto">Assunto</label>
+            <select id="assunto" name="assunto">
+                <option value="none" disabled selected>selecione um assunto</option>
+                <option>Compra</option>
+                <option>Suporte</option>
+                <option>Troca</option>
+                <option>Outros</option>
+            </select>
+            <label for="mensagem">Mensagem</label>
+            <textarea name="mensagem" rows="8" cols="40" placeholder="Digite o texto aqui."></textarea>
+            <input type="submit" value="Enviar mensagem" />
 
-        <a href="https://facebook.com" target="_blank">
-            <img src="../imagens/redes/logo-facebook.svg" alt="Facebook">
-        </a>
+        </form>
 
-        <a href="https://instagram.com" target="_blank">
-            <img src="../imagens/redes/logo-instagram.svg" alt="Instagram">
-        </a>
+    </main>
 
-        <a href="https://www.youtube.com/" target="_blank">
-            <img src="../imagens/redes/logo-youtube.svg" alt="YouTube">
-        </a>
+    <footer>
 
-    </div>
+        <div class="redes-sociais">
 
-    <p >© 2026 Shop TADS</p>
+            <a href="https://facebook.com" target="_blank">
+                <img src="../imagens/redes/logo-facebook.svg" alt="Facebook">
+            </a>
 
-</footer>
+            <a href="https://instagram.com" target="_blank">
+                <img src="../imagens/redes/logo-instagram.svg" alt="Instagram">
+            </a>
+
+            <a href="https://www.youtube.com/" target="_blank">
+                <img src="../imagens/redes/logo-youtube.svg" alt="YouTube">
+            </a>
+
+        </div>
+
+        <p>© 2026 Shop TADS</p>
+
+    </footer>
 
 </body>
 

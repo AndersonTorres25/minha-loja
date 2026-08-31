@@ -174,3 +174,58 @@ footer p {
 .redes-sociais img:hover{
     transform: scale(1.15);
 }
+
+<!--contato-->
+.contato{
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.formulario{
+    width: 100%;
+    max-width: 500px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,.15);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.formulario h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.formulario textarea{
+    resize: vertical;
+}
+
+.formulario button{
+    margin-top: 10px;
+    padding: 12px;
+    background: #198754;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.formulario button:hover{
+    background: #157347;
+}
+
+
+

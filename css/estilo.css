@@ -227,11 +227,11 @@ footer p {
     resize: vertical;
 }
 
-.botao-enviar { 
+input.botao-enviar { 
     margin-top: 10px; 
     padding: 12px; 
     width: 100%; 
-    background-color: #37d189; 
+    background-color: #37d189;
     color: #000000; 
     border: none; 
     border-radius: 8px; 
@@ -240,7 +240,7 @@ footer p {
     cursor: pointer; 
 }
 
-.botao-enviar:hover { 
+input.botao-enviar:hover { 
     background-color: #157347;
  }
 

@@ -60,7 +60,7 @@ main {
 }
 
 .pesquisa {
-    width: 200px;
+    width: 250px;
     height: 25px;
     padding: 10px;
     border: 1px solid #ccc;
@@ -71,7 +71,7 @@ main {
 
 .principal {
 
-    margin: 10px;
+    margin: 0;
 }
 
 .lista-anuncios {
@@ -141,11 +141,36 @@ main {
 }
 
 
-footer {
-    background-color: rgb(3, 3, 3);
-    color: white;
-    text-align: center;
+footer{
+    background-color: #000000;
+    position: relative;
+    display: flex; 
+    align-items: center;  
+    min-height: 50px;  
+}
+ 
+footer p {
+    position: absolute;
+    left: 45%;
+    margin: 0;
+    font-size: 15px; 
     font-weight: bold;
-    font-size: 15px;
+    color: white;
+}
 
+.redes-sociais{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 10px;
+}
+
+.redes-sociais img{
+    width: 28px;
+    height: 28px;
+  
+}
+
+.redes-sociais img:hover{
+    transform: scale(1.15);
 }

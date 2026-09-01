@@ -309,8 +309,8 @@ input.botao-enviar:hover {
     min-height: 250px;
     margin: 100px auto;
     padding: 30px;
-    background-color: white;
-    border: 1px solid #ddd;
+    background-color: rgb(12, 235, 42);
+    border: 1px solid #05b83b;
     border-radius: 12px;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
     display: flex;
@@ -331,7 +331,7 @@ input.botao-enviar:hover {
     display: inline-block;
     margin-top: 15px;
     padding: 10px 20px;
-    background-color: #2e9464;
+    background-color: #1b573b;
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -339,7 +339,8 @@ input.botao-enviar:hover {
 }
 
 .envio a:hover {
-    background-color: #157347;
+    background-color: rgb(244, 248, 19);
+    color: #000000;
 }
 
 

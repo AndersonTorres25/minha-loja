@@ -326,12 +326,13 @@ input.botao-enviar:hover {
     }
       .botoes-banner {
         left: 20px;
-        bottom: 20px;
+        bottom: 120px;
         gap: 8px;
+        padding: 3px;
     }
 
     .botoes-banner a {
         padding: 8px 14px;
-        font-size: 13px;
+        font-size: 7px;
     }
 }

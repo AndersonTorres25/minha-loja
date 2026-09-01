@@ -56,7 +56,6 @@
 }
 
 .pesquisa input{
-    width: 100px;
     height: 35px;
     width: 350px;
     box-sizing: border-box;
@@ -104,8 +103,7 @@ main {
     height: 380px;
     margin: -30px auto 10px auto;
     position: relative; 
-    display: flex;
-    align-items: flex-end;
+   
 }
 .botoes-banner {
     position: absolute;
@@ -130,7 +128,7 @@ main {
     border: 1px solid #157347;
 }
 
-.banner a:hover{
+.botoes-banner a:hover{
     background-color: #157347;
 }
 
@@ -325,5 +323,15 @@ input.botao-enviar:hover {
         width: 100%;
         justify-content: center;
         gap: 20px;
+    }
+      .botoes-banner {
+        left: 20px;
+        bottom: 20px;
+        gap: 8px;
+    }
+
+    .botoes-banner a {
+        padding: 8px 14px;
+        font-size: 13px;
     }
 }

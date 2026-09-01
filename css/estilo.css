@@ -1,4 +1,3 @@
-
 /*Cabeçalho*/
 .cabecalho {
     display: flex;
@@ -55,7 +54,7 @@
     max-width: 400px;
 }
 
-.pesquisa input{
+.pesquisa input {
     height: 35px;
     width: 350px;
     box-sizing: border-box;
@@ -64,7 +63,8 @@
     border-radius: 5px;
     font-size: 12px;
 }
-.pesquisa button{
+
+.pesquisa button {
     width: 80px;
     height: 35px;
     border: 1px solid #ccc;
@@ -83,6 +83,7 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 main {
     flex: 1;
 }
@@ -93,22 +94,24 @@ main {
 
     margin: 0;
 }
+
 .banner {
     background-image: url("../imagens/index/BANNER.PNG");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    max-width: 1200px; 
+    max-width: 1200px;
     height: 380px;
     margin: -30px auto 10px auto;
-    position: relative; 
-   
+    position: relative;
+
 }
+
 .botoes-banner {
     position: absolute;
     bottom: 40px;
-    left: 140px; 
+    left: 140px;
     display: flex;
     gap: 15px;
     z-index: 2;
@@ -128,7 +131,7 @@ main {
     border: 1px solid #157347;
 }
 
-.botoes-banner a:hover{
+.botoes-banner a:hover {
     background-color: #157347;
 }
 
@@ -189,28 +192,28 @@ main {
 }
 
 /*Rodapé*/
-footer{
+footer {
     background-color: #000000;
     position: relative;
-    display: flex; 
+    display: flex;
     justify-content: center;
-    align-items: center;  
-    min-height: 60px;  
+    align-items: center;
+    min-height: 60px;
     padding: 10px 20px;
     box-sizing: border-box;
     flex-wrap: nowrap;
 }
- 
+
 footer p {
-   margin: 0;
+    margin: 0;
     font-size: 15px;
     font-weight: bold;
     color: white;
     left: 50%;
 }
 
-.redes-sociais{
-     position: absolute;
+.redes-sociais {
+    position: absolute;
     display: flex;
     left: 20px;
     align-items: center;
@@ -218,18 +221,18 @@ footer p {
     margin-left: 10px;
 }
 
-.redes-sociais img{
+.redes-sociais img {
     width: 28px;
     height: 28px;
-  
+
 }
 
-.redes-sociais img:hover{
+.redes-sociais img:hover {
     transform: scale(1.15);
 }
 
 /*Contato*/
-.contato{
+.contato {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -238,62 +241,108 @@ footer p {
     box-sizing: border-box;
 }
 
-.formulario{
-    width: 100%; 
-    max-width: 500px; 
+.formulario {
+    width: 100%;
+    max-width: 500px;
     background-color: white;
-    padding: 30px; 
-    border-radius: 12px; 
-    box-shadow: 0 2px 12px rgba(0, 0, 0, .15); 
-    display: flex; 
-    flex-direction: column; 
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, .15);
+    display: flex;
+    flex-direction: column;
     gap: 10px;
 }
 
-.formulario h1{
-    text-align: center; 
-    margin-top: 0; 
-    margin-bottom: 15px; 
+.formulario h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 15px;
     font-size: 28px;
 }
 
-.formulario label { 
-    font-weight: bold; 
-    font-size: 14px; 
-    margin-top: 5px; 
-    
+.formulario label {
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 5px;
+
 }
 
-.formulario input, .formulario select,  .formulario textarea{
-   width: 100%; 
-   box-sizing: border-box; 
-   padding: 11px; 
-   border: 1px solid #ccc; border-radius: 6px; 
-   font-family: Arial, Helvetica, sans-serif; 
-   font-size: 14px; 
-   background-color: white;
+.formulario input,
+.formulario select,
+.formulario textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: white;
 }
 
-.formulario textarea{
+.formulario textarea {
     resize: vertical;
 }
 
-input.botao-enviar { 
-    margin-top: 10px; 
-    padding: 12px; 
-    width: 100%; 
+input.botao-enviar {
+    margin-top: 10px;
+    padding: 12px;
+    width: 100%;
     background-color: #37d189;
-    color: #000000; 
-    border: none; 
-    border-radius: 8px; 
-    font-weight: bold; 
-    font-size: 15px; 
-    cursor: pointer; 
+    color: #000000;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
 }
 
-input.botao-enviar:hover { 
+input.botao-enviar:hover {
     background-color: #157347;
- }
+}
+
+/*Contato-sucesso*/
+.envio {
+    box-sizing: border-box;
+    width: 350px;
+    min-height: 250px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.envio h1 {
+    font-size: 24px;
+}
+.envio p{
+    font-weight: bold;
+}
+
+.envio a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+
+    background-color: #2e9464;
+    color: white;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    border-radius: 8px;
+}
+
+.envio a:hover {
+    background-color: #157347;
+}
 
 
 
@@ -324,7 +373,8 @@ input.botao-enviar:hover {
         justify-content: center;
         gap: 20px;
     }
-      .botoes-banner {
+
+    .botoes-banner {
         left: 19px;
         bottom: 130px;
         gap: 8px;

@@ -15,7 +15,6 @@
     display: flex;
     align-items: center;
     gap: 2px;
-    /* distância entre as duas logos */
     margin-left: -20px;
 }
 
@@ -30,7 +29,6 @@
 .dados-usuario {
     font-size: 14px;
     margin-left: 10px;
-    ;
 }
 
 
@@ -48,11 +46,6 @@
 
 .nav a:hover {
     color: #0d6efd;
-}
-
-
-main {
-    flex: 1;
 }
 
 .pesquisa {
@@ -91,15 +84,57 @@ body {
     display: flex;
     flex-direction: column;
 }
+main {
+    flex: 1;
+}
+
 
 /*Index*/
 .principal {
 
     margin: 0;
 }
+.banner {
+    background-image: url("../imagens/index/BANNER.PNG");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 1200px; 
+    height: 380px;
+    margin: -30px auto 10px auto;
+    position: relative; 
+    display: flex;
+    align-items: flex-end;
+}
+.botoes-banner {
+    position: absolute;
+    bottom: 40px;
+    left: 140px; 
+    display: flex;
+    gap: 15px;
+    z-index: 2;
+}
+
+.botoes-banner a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #2e9464;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: 1px solid #157347;
+}
+
+.banner a:hover{
+    background-color: #157347;
+}
 
 /*Produtos*/
-
 .lista-anuncios {
     display: grid;
     gap: 10px;
@@ -155,20 +190,7 @@ body {
     background: #157347;
 }
 
-.banner {
-    background-image: url("../imagens/index/BANNER.PNG");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 85%;
-    height: 380px;
-    border-radius: 20px;
-    aspect-ratio: 16 / 9;
-    margin: 0 auto;
-    margin-top: -20px;
-}
-
-/*Footer*/
+/*Rodapé*/
 footer{
     background-color: #000000;
     position: relative;
@@ -178,6 +200,7 @@ footer{
     min-height: 60px;  
     padding: 10px 20px;
     box-sizing: border-box;
+    flex-wrap: nowrap;
 }
  
 footer p {
@@ -243,9 +266,7 @@ footer p {
     
 }
 
-.formulario input,
-.formulario select,
-.formulario textarea{
+.formulario input, .formulario select,  .formulario textarea{
    width: 100%; 
    box-sizing: border-box; 
    padding: 11px; 

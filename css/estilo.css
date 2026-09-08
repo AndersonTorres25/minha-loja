@@ -454,6 +454,67 @@ input.botao-enviar:hover {
 
 
 /*tela Mobile*/
+@media (max-width: 900px) {
+
+    .botoes-banner {
+        left: 50px;
+        bottom: 65px;
+        gap: 10px;
+    }
+
+    .botoes-banner a {
+        padding: 8px 11px;
+        font-size: 13px; 
+    }
+
+    footer {
+        display: flex;
+        gap: 8px;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .footer p{
+        font-size: 15px;
+    }
+
+    .redes-sociais {   
+        left: 17px;
+        gap: 8px;
+    }
+
+    .redes-sociais img {
+        width: 28px;
+        height: 28px;
+
+    }
+
+}
+
+@media (max-width: 768px){
+
+    .layout-carrinho{
+        grid-template-columns: 1fr;
+    }
+
+    .item{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .botoes-banner {
+        left: 43px;
+        bottom: 95px;
+        gap: 10px;
+    }
+
+    .botoes-banner a {
+        padding: 6px 12px;
+        font-size: 11px; 
+    }
+ 
+}
+
 @media (max-width: 600px) {
 
     .cabecalho {
@@ -482,9 +543,9 @@ input.botao-enviar:hover {
     }
 
     .botoes-banner {
-        left: 19px;
-        bottom: 130px;
-        gap: 8px;
+        left: 35px;
+        bottom: 100px;
+        gap: 10px;
     }
 
     .botoes-banner a {
@@ -493,20 +554,96 @@ input.botao-enviar:hover {
     }
 
     footer {
-        flex-direction: column;
         gap: 10px;
         text-align: center;
     }
+
+    .footer p{
+        font-size: 15px;
+    }
+
+    .redes-sociais {   
+        left: 17px;
+        gap: 10px;
+    }
+
+    .redes-sociais img {
+        width: 28px;
+        height: 28px;
+
+    }
 }
-@media (max-width: 768px){
 
-    .layout-carrinho{
-        grid-template-columns: 1fr;
+@media (max-width: 440px) {
+
+    .botoes-banner {
+        left: 23px;
+        bottom: 125px;
+        gap: 6px;
     }
 
-    .item{
-        flex-direction: column;
+    .botoes-banner a {
+        padding: 5px 9px;
+        font-size: 6px; 
+    }
+
+    footer {
+        display: flex;
+        gap: 5px;
         text-align: center;
+        flex-wrap: wrap;
     }
+
+    .footer p{
+        font-size: 13px;
+    }
+
+    .redes-sociais {   
+        left: 17px;
+        gap: 8px;
+    }
+
+    .redes-sociais img {
+        width: 24px;
+        height: 24px;
+
+    }
+
+}
+
+@media (max-width: 360px) {
+
+    .botoes-banner {
+        left: 17px;
+        bottom: 135px;
+        gap: 6px;
+    }
+
+    .botoes-banner a {
+        padding: 5px 9px;
+        font-size: 6px; 
+    }
+
+    footer {
+        display: flex;
+        gap: 5px;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .footer p{
+        font-size: 11px;
+    }
+
+    .redes-sociais {   
+    left: 17px;
+    gap: 8px;
+}
+
+.redes-sociais img {
+    width: 22px;
+    height: 22px;
+
+}
 
 }

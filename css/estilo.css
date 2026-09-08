@@ -399,7 +399,7 @@ input.botao-enviar:hover {
 
 .info-item span{
     font-weight: bold;
-    color: #198754;
+    color: #000000;
 }
 
 .qtd{
@@ -416,12 +416,15 @@ input.botao-enviar:hover {
     display: inline-block;
     margin-top: 20px;
     text-decoration: none;
-    color: #0d6efd;
+    color: #000000;
     font-weight: bold;
+}
+.voltar-produtos:hover{
+    color: #0d6efd;
 }
 
 .resumo h3{
-    color: #198754;
+    color: #000000;
     margin: 15px 0;
 }
 

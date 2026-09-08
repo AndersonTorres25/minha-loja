@@ -30,9 +30,10 @@
     font-size: 14px;
     margin-left: 10px;
 }
+
 #usuario {
-            margin-top: -12px;
-        }
+    margin-top: -12px;
+}
 
 
 .nav {
@@ -327,7 +328,7 @@ input.botao-enviar:hover {
     font-size: 24px;
 }
 
-.envio p{
+.envio p {
     font-weight: bold;
 }
 
@@ -348,18 +349,18 @@ input.botao-enviar:hover {
 }
 
 /* Carrinho */
-.pagina-carrinho{
+.pagina-carrinho {
     max-width: 1200px;
     margin: auto;
     padding: 30px 20px;
 }
 
-.pagina-carrinho h1{
+.pagina-carrinho h1 {
     text-align: center;
     margin-bottom: 30px;
 }
 
-.layout-carrinho{
+.layout-carrinho {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 25px;
@@ -367,7 +368,7 @@ input.botao-enviar:hover {
 
 .itens-carrinho,
 .resumo,
-.endereco{
+.endereco {
     background-color: #ffffff;
     border-radius: 12px;
     padding: 20px;
@@ -379,7 +380,7 @@ input.botao-enviar:hover {
 
 }
 
-.item{
+.item {
     display: flex;
     align-items: center;
     gap: 15px;
@@ -387,48 +388,49 @@ input.botao-enviar:hover {
     border-bottom: 1px solid #ddd;
 }
 
-.info-item{
+.info-item {
     flex: 1;
 }
 
-.info-item h3{
+.info-item h3 {
     margin: 0;
     font-size: 17px;
 }
 
 
-.info-item span{
+.info-item span {
     font-weight: bold;
     color: #000000;
 }
 
-.qtd{
+.qtd {
     text-align: center;
 }
 
-.qtd input{
+.qtd input {
     width: 55px;
     padding: 6px;
     text-align: center;
 }
 
-.voltar-produtos{
+.voltar-produtos {
     display: inline-block;
     margin-top: 20px;
     text-decoration: none;
     color: #000000;
     font-weight: bold;
 }
-.voltar-produtos:hover{
+
+.voltar-produtos:hover {
     color: #0d6efd;
 }
 
-.resumo h3{
+.resumo h3 {
     color: #000000;
     margin: 15px 0;
 }
 
-.botao-finalizar{
+.botao-finalizar {
     display: block;
     text-align: center;
     background-color: #198754;
@@ -439,15 +441,15 @@ input.botao-enviar:hover {
     font-weight: bold;
 }
 
-.botao-finalizar:hover{
+.botao-finalizar:hover {
     background-color: #157347;
 }
 
-.endereco{
+.endereco {
     margin-top: 25px;
 }
 
-.endereco p{
+.endereco p {
     margin: 8px 0;
 }
 
@@ -464,40 +466,18 @@ input.botao-enviar:hover {
 
     .botoes-banner a {
         padding: 8px 11px;
-        font-size: 13px; 
-    }
-
-    footer {
-        display: flex;
-        gap: 8px;
-        text-align: center;
-        flex-wrap: wrap;
-    }
-
-    .footer p{
-        font-size: 15px;
-    }
-
-    .redes-sociais {   
-        left: 17px;
-        gap: 8px;
-    }
-
-    .redes-sociais img {
-        width: 28px;
-        height: 28px;
-
+        font-size: 13px;
     }
 
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
 
-    .layout-carrinho{
+    .layout-carrinho {
         grid-template-columns: 1fr;
     }
 
-    .item{
+    .item {
         flex-direction: column;
         text-align: center;
     }
@@ -510,9 +490,9 @@ input.botao-enviar:hover {
 
     .botoes-banner a {
         padding: 6px 12px;
-        font-size: 11px; 
+        font-size: 11px;
     }
- 
+
 }
 
 @media (max-width: 600px) {
@@ -550,7 +530,7 @@ input.botao-enviar:hover {
 
     .botoes-banner a {
         padding: 6px 12px;
-        font-size: 11px; 
+        font-size: 11px;
     }
 
     footer {
@@ -558,18 +538,14 @@ input.botao-enviar:hover {
         text-align: center;
     }
 
-    .footer p{
-        font-size: 15px;
-    }
-
-    .redes-sociais {   
-        left: 17px;
-        gap: 10px;
+    .redes-sociais {
+        left: 15px;
+        gap: 8px;
     }
 
     .redes-sociais img {
-        width: 28px;
-        height: 28px;
+        width: 26px;
+        height: 26px;
 
     }
 }
@@ -584,7 +560,7 @@ input.botao-enviar:hover {
 
     .botoes-banner a {
         padding: 5px 9px;
-        font-size: 6px; 
+        font-size: 6px;
     }
 
     footer {
@@ -594,11 +570,11 @@ input.botao-enviar:hover {
         flex-wrap: wrap;
     }
 
-    .footer p{
-        font-size: 13px;
+    footer p {
+        font-size: 12px;
     }
 
-    .redes-sociais {   
+    .redes-sociais {
         left: 17px;
         gap: 8px;
     }
@@ -621,7 +597,7 @@ input.botao-enviar:hover {
 
     .botoes-banner a {
         padding: 5px 9px;
-        font-size: 6px; 
+        font-size: 6px;
     }
 
     footer {
@@ -631,19 +607,15 @@ input.botao-enviar:hover {
         flex-wrap: wrap;
     }
 
-    .footer p{
-        font-size: 11px;
+    footer p {
+        font-size: 10px;
     }
 
-    .redes-sociais {   
-    left: 17px;
-    gap: 8px;
-}
 
-.redes-sociais img {
-    width: 22px;
-    height: 22px;
+    .redes-sociais img {
+        width: 22px;
+        height: 22px;
 
-}
+    }
 
 }

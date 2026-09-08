@@ -30,6 +30,9 @@
     font-size: 14px;
     margin-left: 10px;
 }
+#usuario {
+            margin-top: -12px;
+        }
 
 
 .nav {
@@ -370,6 +373,11 @@ input.botao-enviar:hover {
     border-radius: 12px;
     padding: 20px;
     box-shadow: 0 2px 12px rgba(0,0,0,.12);
+}
+
+.itens-carrinho h2 {
+    text-align: center;
+
 }
 
 .item{

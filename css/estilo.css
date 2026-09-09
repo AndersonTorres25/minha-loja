@@ -1,32 +1,9 @@
 :root {
-    /* Cores principais */
     --cor-branca: #ffffff;
-    --cor-preta: #000000;
-    
-
-    /* Identidade visual */
     --cor-verde: #198754;
     --cor-verde-hover: #157347;
-    --cor-verde-banner: #2e9464;
-    --cor-azul: #0d6efd;
-
-    /* Tons de cinza */
     --cor-fundo: #ffffff;
-    --cor-borda: #cccccc;
-    --cor-borda-card: #dddddd;
-    --cor-texto: #212529;
-
-    /* Sombras */
-    --sombra-header: 0 6px 20px #0129701a;
-    --sombra-card: 0 2px 10px #0000001a;
-    --sombra-form: 0 6px 20px #00000026;
-
-    /* Bordas */
-    --raio-pequeno: 5px;
-    --raio-medio: 8px;
-    --raio-grande: 12px;
-
-    /* Fonte */
+    --sombra-header: 0 6px 25px #0129701a;
     --fonte-padrao: Arial, Helvetica, sans-serif;
 }
 
@@ -38,7 +15,7 @@
     flex-wrap: wrap;
     padding: 15px 30px 15px 0px;
     background-color: var(--cor-fundo);
-    box-shadow: 0 6px 20px #0129701a;
+    box-shadow: var(--sombra-header);
     box-sizing: border-box;
     z-index: 10;
 }
@@ -126,7 +103,7 @@
 /*Body*/
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fonte-padrao);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -170,7 +147,7 @@ main {
     align-items: center;
     justify-content: center;
     padding: 10px 20px;
-    background-color: #2e9464;
+    background-color: var(--cor-verde);
     color: #ffffff;
     text-decoration: none;
     font-size: 15px;
@@ -180,7 +157,7 @@ main {
 }
 
 .botoes-banner a:hover {
-    background-color: #157347;
+    background-color: var(--cor-verde-hover);
 }
 
 /*Produtos*/
@@ -206,7 +183,7 @@ main {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    background-color: #ffffff;
+    background-color: var(--cor-fundo);
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 2px 10px #0000001a;
@@ -229,7 +206,7 @@ main {
     padding: 10px;
     border: none;
     border-radius: 7px;
-    background-color: #198754;
+    background-color: var(--cor-verde);
     color: #ffffff;
     cursor: pointer;
 }
@@ -239,7 +216,7 @@ main {
 }
 
 .anuncio button:hover {
-    background-color: #157347;
+    background-color: var(--cor-verde-hover);
 }
 
 /*Rodapé*/
@@ -286,17 +263,17 @@ footer p {
     justify-content: center;
     align-items: center;
     padding: 40px 20px;
-    background-color: #ffffff;
+    background-color: var(--cor-fundo);
     box-sizing: border-box;
 }
 
 .formulario {
     width: 100%;
     max-width: 500px;
-    background-color: white;
+    background-color: var(--cor-fundo);
     padding: 30px;
     border-radius: 12px;
-    box-shadow: 0 6px 10px #00000026;
+    box-shadow: 0 6px 20px #00000026;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -326,7 +303,7 @@ footer p {
     border-radius: 6px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
-    background-color: #ffffff;
+    background-color: var(--cor-fundo);
 }
 
 .formulario textarea {
@@ -337,7 +314,7 @@ input.botao-enviar {
     margin-top: 10px;
     padding: 12px;
     width: 100%;
-    background-color: #198754;
+    background-color: var(--cor-verde);
     color: #ffffff;
     border: none;
     border-radius: 8px;
@@ -347,7 +324,7 @@ input.botao-enviar {
 }
 
 input.botao-enviar:hover {
-    background-color: #157347;
+    background-color: var(--cor-verde-hover);
 }
 
 /*Contato-sucesso*/
@@ -421,7 +398,7 @@ input.botao-enviar:hover {
 .itens-carrinho,
 .resumo,
 .endereco {
-    background-color: #ffffff;
+    background-color: var(--cor-fundo);
     border-radius: 12px;
     padding: 20px;
     box-shadow: 0 2px 12px #0000001f;
@@ -485,7 +462,7 @@ input.botao-enviar:hover {
 .botao-finalizar {
     display: block;
     text-align: center;
-    background-color: #198754;
+    background-color: var(--cor-verde);
     color: #ffffff;
     text-decoration: none;
     padding: 14px;
@@ -494,7 +471,7 @@ input.botao-enviar:hover {
 }
 
 .botao-finalizar:hover {
-    background-color: #157347;
+    background-color: var(--cor-verde-hover);
 }
 
 .endereco {
@@ -552,7 +529,7 @@ input.botao-enviar:hover {
     max-width: 450px;
     margin: 25px 0;
     padding: 20px;
-    background-color: #ffffff;
+    background-color: var(--cor-fundo);
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
@@ -587,12 +564,12 @@ input.botao-enviar:hover {
 }
 
 .btn-voltar {
-    background-color: #198754;
+    background-color: var(--cor-verde);
     color: #ffffff;
 }
 
 .btn-voltar:hover {
-    background-color: #157347;
+    background-color: var(--cor-verde-hover);
 }
 
 .btn-pedido {

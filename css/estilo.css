@@ -340,8 +340,8 @@ input.botao-enviar:hover {
     max-width: 500px;
     min-height: 250px;
     padding: 30px;
-    background-color: #6acf5d;
-    border: 1px solid #dee97a;
+    background: linear-gradient(45deg, #0B6B3A, #16A085, #7DCEA0);
+    border: 1px solid #1a751a;
     border-radius: 12px;
     box-shadow: 0 25px 30px #00000026;
     display: flex;
@@ -364,7 +364,7 @@ input.botao-enviar:hover {
     display: inline-block;
     margin-top: 15px;
     padding: 10px 20px;
-    background-color: #e2e60f;
+    background: linear-gradient(45deg, #b1e733, #06683a);
     color: #000000;
     text-decoration: none;
     font-weight: bold;
